@@ -1,0 +1,266 @@
+/* Importation des polices */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+:root {
+    --primary-color: #D8A7B1; /* Rose poudré */
+    --secondary-color: #4A4A4A; /* Gris foncé */
+    --light-color: #FAF8F8; /* Blanc cassé */
+    --accent-color: #B76E79; /* Rose soutenu */
+    --text-color: #333333; /* Noir doux */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--light-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+  font-family: 'Libre Baskerville', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.btn-reservation {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-reservation:hover {
+    background-color: var(--primary-color);
+}
+
+/* Section Hero */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--light-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.hero-text h1 {
+  font-family: 'Libre Baskerville', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.hero-text p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.hero-text .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.hero-text .btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Section About */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--light-color);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.about-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Services */
+.services-section {
+    padding: 2rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.services-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Produits */
+.produits-section {
+    padding: 2rem;
+    background-color: var(--light-color);
+    text-align: center;
+}
+
+.produits-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.product-list {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    text-align: left;
+}
+
+.product-list li {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-list li:hover {
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
